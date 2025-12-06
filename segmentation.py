@@ -13,7 +13,7 @@ feature_columns = ['Gender', 'Age', 'City', 'Membership Type', 'Total Spend',
 segment_names = ['VIP Loyalists', 'Big Spenders At Risk', 'Sleeping Mid-Tier', 'Dissatisfied & Churned']
 
 # st.set_page_config(page_title("Customer Segmentation")
-st.image("logo.png", width=150)  # replace with your real logo URL or local file
+st.image("images/logo.png", width=150)  # replace with your real logo URL or local file
 st.markdown("<h1 style='text-align: center; color: white;'>Customer Segmentation Predictor</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: #aaaaaa; font-size:18px;'>Powered by K-means + PCA • Built by Brightman</p>", unsafe_allow_html=True)
 st.set_page_config(page_title="Customer Segmentation", layout="centered")
