@@ -2,7 +2,7 @@
 
 A scalable ML-powered tool that segments customers using K-Means clustering on retail data, uncovers actionable insights, and deploys predictions via an interactive Streamlit dashboard. Built to solve real e-commerce challenges like customer churn and targeted marketing.
 
-![Dashboard Preview](images/Dashboard1.png)
+![Dashboard Preview](Images/Dashboard1.png)
 
 ## Business Problems This Project Solves
 
@@ -18,36 +18,22 @@ In today's competitive retail landscape, companies lose millions to untargeted m
 
 By clustering customers into 4 distinct segments, this project provides a roadmap to boost retention by 20-30%, optimize marketing ROI, and increase average order value – all backed by your data.
 
-## Key Insights from Data Analysis
-
-Using your dataset (10 features: Gender, Age, City, Membership Type, Total Spend, Items Purchased, Average Rating, Discount Applied, Days Since Last Purchase, Satisfaction Level), we uncovered patterns that directly inform strategy:
-
-| Insight | Evidence from Analysis | Business Impact |
-|---------|------------------------|-----------------|
-| **Satisfaction Drives Recency** | Unsatisfied customers average 45+ days since last purchase (vs. 18 for satisfied) – shown in bar charts and pairplots. | Prioritize feedback loops to reduce churn by re-engaging early. |
-| **Discounts Attract Low-Spenders** | No-discount customers spend 25% more (~$1,350 vs. $1,100) – clear from boxplots. | Reserve discounts for acquisition; upsell full-price to loyalists for better margins. |
-| **High-Spenders Can Be At-Risk** | Cluster 1: Big spenders with low ratings – heatmap shows negative correlation between spend and satisfaction if ignored. | Target these "whales" with VIP support to prevent 30-50% revenue loss. |
-| **Membership Tiers Predict Value** | Gold members dominate high-spend clusters (correlation +0.7 in heatmap). | Upgrade mid-tier customers to Gold via personalized incentives. |
-| **Behavioral Segments Are Clear** | PCA (82% variance in 2D, 93% in 3D) visualizes 4 tight clusters – no overlap means reliable targeting. | Enables hyper-personalized campaigns, lifting engagement by 15-25%. |
-
-These insights were derived from exploratory data analysis (EDA), including heatmaps for correlations, elbow/silhouette for optimal K=4, and PCA for dimensionality reduction.
-
 ## Key Insights from Data Analysis  
 *What the data is quietly screaming — and most companies completely miss*
 
 | # | Insight (This Changes Everything) | Proof (Your Eyes Don't Lie) | Revenue Impact |
 |---|------------------------------------|------------------------------|----------------|
-| 1 | **Gold members spend 2.3× more than Bronze**<br>Average Gold: $1,153 vs Bronze: $498 | ![Gold Dominance](images/total_spend_membership.png) | Immediate priority: Convert Silver → Gold with targeted perks |
-| 2 | **Unsatisfied customers have already left**<br>43 days vs 18 days since last purchase | ![Churn Predictor](images/days_since_satisfaction_bar.png) | Every dissatisfied customer is a ticking revenue bomb — act in <30 days |
-| 3 | **Discount seekers spend 22% less overall**<br>No-discount buyers: ~$1,350 vs Discount: ~$1,050 | ![Discount Trap](images/discount_spend_boxplot.png) | Stop training customers to wait for sales — protect margins |
-| 4 | **Only 35.9% of customers are truly Satisfied**<br>33.3% Unsatisfied + 30.7% Neutral = 64% at risk | ![Satisfaction Pie](images/satisfaction_pie.png) | Silent majority is slipping away — most companies think they’re “fine” |
-| 5 | **San Francisco customers spend 2× more than Chicago**<br>City drives massive spend variance | ![City Spend](images/total_spend_by_city.png) | Geo-targeted offers and inventory planning just became mandatory |
-| 6 | **Four behavioral segments exist — not demographic**<br>Age/Gender barely matter. Behavior rules everything | ![PCA Proof](images/pca_2d_final.png) | Stop segmenting by age. Start segmenting by spend + satisfaction + recency |
+| 1 | **Gold members spend 2.3× more than Bronze**<br>Average Gold: $1,153 vs Bronze: $498 | ![Gold Dominance](Images/total_spend_membership.png) | Immediate priority: Convert Silver → Gold with targeted perks |
+| 2 | **Unsatisfied customers have already left**<br>43 days vs 18 days since last purchase | ![Churn Predictor](Images/days_since_satisfaction_bar.png) | Every dissatisfied customer is a ticking revenue bomb — act in <30 days |
+| 3 | **Discount seekers spend 22% less overall**<br>No-discount buyers: ~$1,350 vs Discount: ~$1,050 | ![Discount Trap](Images/discount_spend_boxplot.png) | Stop training customers to wait for sales — protect margins |
+| 4 | **Only 35.9% of customers are truly Satisfied**<br>33.3% Unsatisfied + 30.7% Neutral = 64% at risk | ![Satisfaction Pie](Images/satisfaction_pie.png) | Silent majority is slipping away — most companies think they’re “fine” |
+| 5 | **San Francisco customers spend 2× more than Chicago**<br>City drives massive spend variance | ![City Spend](Images/total_spend_by_city.png) | Geo-targeted offers and inventory planning just became mandatory |
+| 6 | **Four behavioral segments exist — not demographic**<br>Age/Gender barely matter. Behavior rules everything | ![PCA Proof](Images/pca_2d_final.png) | Stop segmenting by age. Start segmenting by spend + satisfaction + recency |
 
 ### Bonus: The Hidden Truth in One Image
 > “Everything connects — and the correlations are brutal.”
 
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Correlation Heatmap](Images/correlation_heatmap.png)
 
 - Total Spend strongly correlates with Membership Type (+0.80), Items Purchased (+0.97), and Average Rating (+0.94)  
 - Days Since Last Purchase has **–0.77** with Satisfaction Level → the single strongest predictor of churn  
