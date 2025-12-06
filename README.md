@@ -32,6 +32,30 @@ Using your dataset (10 features: Gender, Age, City, Membership Type, Total Spend
 
 These insights were derived from exploratory data analysis (EDA), including heatmaps for correlations, elbow/silhouette for optimal K=4, and PCA for dimensionality reduction.
 
+## Key Insights from Data Analysis  
+*What the data is quietly screaming — and most companies completely miss*
+
+| # | Insight (This Changes Everything) | Proof (Your Eyes Don't Lie) | Revenue Impact |
+|---|------------------------------------|------------------------------|----------------|
+| 1 | **Gold members spend 2.3× more than Bronze**<br>Average Gold: $1,153 vs Bronze: $498 | ![Gold Dominance](images/total_spend_membership.png) | Immediate priority: Convert Silver → Gold with targeted perks |
+| 2 | **Unsatisfied customers have already left**<br>43 days vs 18 days since last purchase | ![Churn Predictor](images/days_since_satisfaction_bar.png) | Every dissatisfied customer is a ticking revenue bomb — act in <30 days |
+| 3 | **Discount seekers spend 22% less overall**<br>No-discount buyers: ~$1,350 vs Discount: ~$1,050 | ![Discount Trap](images/discount_spend_boxplot.png) | Stop training customers to wait for sales — protect margins |
+| 4 | **Only 35.9% of customers are truly Satisfied**<br>33.3% Unsatisfied + 30.7% Neutral = 64% at risk | ![Satisfaction Pie](images/satisfaction_pie.png) | Silent majority is slipping away — most companies think they’re “fine” |
+| 5 | **San Francisco customers spend 2× more than Chicago**<br>City drives massive spend variance | ![City Spend](images/total_spend_by_city.png) | Geo-targeted offers and inventory planning just became mandatory |
+| 6 | **Four behavioral segments exist — not demographic**<br>Age/Gender barely matter. Behavior rules everything | ![PCA Proof](images/pca_2d_final.png) | Stop segmenting by age. Start segmenting by spend + satisfaction + recency |
+
+### Bonus: The Hidden Truth in One Image
+> “Everything connects — and the correlations are brutal.”
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+- Total Spend strongly correlates with Membership Type (+0.80), Items Purchased (+0.97), and Average Rating (+0.94)  
+- Days Since Last Purchase has **–0.77** with Satisfaction Level → the single strongest predictor of churn  
+- Discount Applied has **+0.76** correlation with long purchase gaps → discounts don’t fix inactivity
+
+This isn’t just analysis.  
+This is **profit and loss hiding in plain sight**.
+
 ## Technical Approaches & Solutions
 
 To solve these problems end-to-end, I followed a structured ML pipeline:
