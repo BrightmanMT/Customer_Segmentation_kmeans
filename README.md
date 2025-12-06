@@ -2,7 +2,7 @@
 
 A scalable ML-powered tool that segments customers using K-Means clustering on retail data, uncovers actionable insights, and deploys predictions via an interactive Streamlit dashboard. Built to solve real e-commerce challenges like customer churn and targeted marketing.
 
-![Dashboard Preview](Images/Dashboard1.png)
+![Dashboard Preview](Images/Dashboad1.png)
 
 ## Business Problems This Project Solves
 
@@ -23,8 +23,8 @@ By clustering customers into 4 distinct segments, this project provides a roadma
 
 | # | Insight (This Changes Everything) | Proof (Your Eyes Don't Lie) | Revenue Impact |
 |---|------------------------------------|------------------------------|----------------|
-| 1 | **Gold members spend 2.3× more than Bronze**<br>Average Gold: $1,153 vs Bronze: $498 | ![Gold Dominance](Images/total_spend_membership.png){width=500}| Immediate priority: Convert Silver → Gold with targeted perks |
-| 2 | **Unsatisfied customers have already left**<br>43 days vs 18 days since last purchase | ![Churn Predictor](Images/days_since_satisfaction_bar.png){width=500} | Every dissatisfied customer is a ticking revenue bomb — act in <30 days |
+| 1 | **Gold members spend 2.3× more than Bronze**<br>Average Gold: $1,153 vs Bronze: $498 | ![Gold Dominance](Images/total_spend_membership.png){width=500 height= 200}| Immediate priority: Convert Silver → Gold with targeted perks |
+| 2 | **Unsatisfied customers have already left**<br>43 days vs 18 days since last purchase | ![Churn Predictor](Images/days_since_satisfaction_bar.png){width=500 height = 200} | Every dissatisfied customer is a ticking revenue bomb — act in <30 days |
 | 3 | **Discount seekers spend 22% less overall**<br>No-discount buyers: ~$1,350 vs Discount: ~$1,050 | ![Discount Trap](Images/discount_spend_boxplot.png){width=500} | Stop training customers to wait for sales — protect margins |
 | 4 | **Only 35.9% of customers are truly Satisfied**<br>33.3% Unsatisfied + 30.7% Neutral = 64% at risk | ![Satisfaction Pie](Images/satisfaction_pie.png){width=500} | Silent majority is slipping away — most companies think they’re “fine” |
 | 5 | **San Francisco customers spend 2× more than Chicago**<br>City drives massive spend variance | ![City Spend](Images/total_spend_by_city.png){width=500} | Geo-targeted offers and inventory planning just became mandatory |
