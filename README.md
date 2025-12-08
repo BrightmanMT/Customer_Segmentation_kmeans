@@ -1,5 +1,7 @@
 # Customer Segmentation Engine: Turning Data into Revenue Growth
 
+ ##[Try Live demo here](https://customersegmentationkmeans-f9tbtxtloyjtgiefse2qzq.streamlit.app/)
+
 A scalable ML-powered tool that segments customers using K-Means clustering on retail data, uncovers actionable insights, and deploys predictions via an interactive Streamlit dashboard. Built to solve real e-commerce challenges like customer churn and targeted marketing.
 
 ![Dashboard Preview](Images/Dashboad1.png)
@@ -61,7 +63,7 @@ The crown jewel: An interactive dashboard where managers input customer data and
 
 - **Features**: Sliders/selectors for all 10 inputs; predicts segment with business advice (e.g., "Reward VIPs").
 - **Why It Solves Problems**: Turns static analysis into dynamic tool – e.g., spot at-risk spenders in real-time.
-- **Demo**: Try it live [here](https://your-username-customer-segmentation.streamlit.app). Input a low-spend, dissatisfied customer → see churn risk flagged.
+- **Demo**: Try it live [here](https://customersegmentationkmeans-f9tbtxtloyjtgiefse2qzq.streamlit.app/). Input a low-spend, dissatisfied customer → see churn risk flagged.
 
 This app bridges data science and business ops, saving hours of manual work.
 
